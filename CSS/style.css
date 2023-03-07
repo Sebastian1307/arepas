@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/*ANIMACIONES AQUI*/
+@keyframes loguito {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+
+/*---------------------------------------------------*/
+
+.Cabezal{
+    background-color: #232323;
+    box-shadow: #3d3c3c 0px 7px
+}
+body{
+    background-color: #232323;
+
+
+}
+.bannerarepa1{
+    float: left;
+    padding-left: 30px;
+}
+.Logo a{
+    animation: loguito 5s 750ms linear infinite;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: #fffbfa;
+    background-color: #0f0e0e;
+}
+.Logo a:hover{
+    transform: scaleY(3);
+    background-color: rgb(122, 117, 117);
+}
+.Anuncio{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    background-color: #ff505a;
+}
+button{
+    position: relative;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.4em 2em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+button:hover{
+    transform: scale(1.2);
+    border-radius: 43px;
+    box-shadow: inset 5px 5px 7px #5a5a5a,
+                inset -5px -5px 7px #ffffff;
+}
+
+.MenuDepl a{
+    
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    text-decoration: none;
+}
+.BarraNav a.Actual{
+    position: static;
+    background-color: rgb(129, 140, 150);
+    color: white;
+}
+.BarraNav a:hover{
+    background-color: #ddd;
+    color:rgb(0, 0, 0)
+}
+.BarraNav{
+    padding: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: static;
+}
+.MenuDepl{
+    padding: 0;
+    text-align: right;
+    min-width: 100%;
+    background-color: #232323;
+}
+.dropbtn {
+    position: static;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+  }
+.parallax {
+    /* The image used */
+    background-image: url("/IMG/bgArepas.jpg");
+    filter: blur(px);
+    /* Set a specific height */
+    min-height: 150px;
+    /* Efecto parallax al mover  */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgprimera{
+    filter: blur(4px);
+}
+.textoprimera{
+    text-shadow: rgb(134, 129, 129) 4px 4px ;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #232323;
+}
+.primera{
+    font-size: 100px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.tituloprimera{
+    font-family: 'Lilita One', cursive;
+    color: #ddd;
+    text-align: center;
+    font-size: 50px;
+}
+.opciones{
+    width:25%;
+    min-height:280px;
+    display: inline-block;
+    padding: 25px;
+}
+.opciones img{
+    box-shadow: #666565 6px 6px 6px ;}
+.opciones p{
+    font-family: 'Lilita One', cursive;
+    color: #ddd;
+    text-align: center;
+    font-size: 25px;
+}
+.Imagen3{
+    filter: brightness(85%);
+}
+
+.ContenedorOpciones a{
+    position: relative;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.4em 2em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+.ContenedorOpciones a:hover{
+    transform: scale(1.2);
+    border-radius: 43px;
+    box-shadow: inset 5px 5px 7px #5a5a5a,
+                inset -5px -5px 7px #ffffff;
+}
+
+
+footer{
+    padding:40px 0;
+    background-color:#232323;
+    color:#abacad;
+}
+  
+footer ul {
+    border-radius: 40px;
+    background-color: #5a5959;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+}
+  
+footer li {
+    text-shadow: #615f5f 3px 3px;
+    background-color: #353333;
+    padding:0 10px;
+}
+  
+footer ul a {
+    font-family: 'Josefin Sans', sans-serif;
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+}
+  
+footer ul a:hover {
+    opacity:1;
+}
+footer h1{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top:15px;
+    text-align:center;
+    font-size:40px;
+    color:#ffffff;
+    margin-bottom:0;
+    text-shadow: rgb(117, 117, 117) 4px 4px;
+}
+.copyright {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top:15px;
+    text-align:center;
+    font-size:25px;
+    color:#ffffff;
+    margin-bottom:0;
+}
+
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #463535;
+    padding: 20px;
+    color: white;
+  }
+
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    .BarraNav{
+        padding: 25px;
+        width: 100%;
+    }
+    nav{
+        font-size: 5px;
+        width: 100%;
+    }
+    .MenuDepl a{
+        width: 100%;
+        font-size:medium;
+        text-align: center;
+        display: inline-block;
+    }
+    .der{
+    display: none;
+    width: 100%;
+    }
+    footer{
+    width: 100%;
+    }
+    .ContenedorOpciones{
+    min-height: 40%;
+    }
+    .Seccion1{
+    width: 100%;
+    height: 50%;
+    font-size: 50%;
+    }
+
+    .der img{
+    width: 100%;
+    }
+    .bannerarepa1{
+    display: none;
+    }
+    .opciones{
+        width: 100%;
+    }
+    .ContenedorOpciones{
+    display: block;
+    width: 100%;
+    min-height: auto;
+    }
+    .Actual{
+    font-size: 50px;
+    }
+    img{
+    width: 100%;
+    }
+    .textoprimera{
+    font-size: 60px;
+    }
+    .parallax{
+        min-height: 100px;
+    }
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: large;
+        cursor: pointer;
+    }
+    label{
+        font-size: large;
+    }
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        font-size: large;
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+      .dropbtn {
+        margin: auto;
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 25px;
+        font-size: 15px;
+        border: none;
+    }
+        /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: relative;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+}

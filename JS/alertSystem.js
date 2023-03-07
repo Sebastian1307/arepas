@@ -1,0 +1,3 @@
+function ventanaEmerg(){
+    alert("Proximamente")
+}
